@@ -170,7 +170,10 @@ const App = () => {
 
         <div className="addresswave">
           WavePortal address:  0x4e9AfD8B80cF08Aa4586fC02578ff0dCc74Fd501
-          https://goerli.etherscan.io/address/0x4e9AfD8B80cF08Aa4586fC02578ff0dCc74Fd501
+        </div>
+
+        <div className="etherscan">
+          <a href="https://goerli.etherscan.io/address/0x4e9AfD8B80cF08Aa4586fC02578ff0dCc74Fd501"> LINK TO ETHERSCAN CONTRACT </a>
         </div>
       </div>
     </div>
