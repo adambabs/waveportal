@@ -32,3 +32,9 @@
   border-radius: 5px;
   
 }
+
+.waveCount {
+  font-family: "Your Cool Font", sans-serif; /* Replace "Your Cool Font" with the actual font name or import the font */
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
