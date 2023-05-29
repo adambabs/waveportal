@@ -167,6 +167,10 @@ const App = () => {
         <div className="waveCount">
           Total Waves: {totalWaveCount}
         </div>
+
+        <div className="addresswave">
+          WavePortal address:  0x4e9AfD8B80cF08Aa4586fC02578ff0dCc74Fd501
+        </div>
       </div>
     </div>
   );
