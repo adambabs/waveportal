@@ -1,11 +1,12 @@
 # buildspace Wave Portal 👋 
 
 ### **Welcome!**
-To get started with this course, clone this repo and follow these commands:
 
 1. Run `npm install` at the root of your directory
 2. Run `npm run start` to start the project
-3. Start coding!
 
-### **Questions?**
-Have some questions make sure you head over to your [buildspace Dashboard](https://app.buildspace.so/courses/CO02cf0f1c-f996-4f50-9669-cf945ca3fb0b) and link your Discord account so you can get access to helpful channels and your instructor!
+## Etherscan link to the contract:
+https://goerli.etherscan.io/address/0x4e9AfD8B80cF08Aa4586fC02578ff0dCc74Fd501
+
+## Website where you can access this project:
+https://waveportal-adambabs.vercel.app/
