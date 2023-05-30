@@ -43,7 +43,10 @@ const App = () => {
   const [mining, setMining] = useState(false);
   const [totalWaveCount, setTotalWaveCount] = useState(0); // State variable for total wave count
 
-  const contractAddress = "0x4e9AfD8B80cF08Aa4586fC02578ff0dCc74Fd501";
+  //const contractAddress = "0x4e9AfD8B80cF08Aa4586fC02578ff0dCc74Fd501";
+  const contractAddress = "0x7a8263cd3a80c241820eb99081E01abee0D3D0C8";
+
+  
   const contractABI = abi.abi;
 
   const connectWallet = async () => {
