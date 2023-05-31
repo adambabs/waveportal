@@ -307,6 +307,12 @@ return (
           LINK TO ETHERSCAN CONTRACT
         </a>
       </div>
+
+      <div className="portfolio">
+        <a href="https://portfolio-adambabs.vercel.app">
+          feel free to checkout my other projects on my portfolio website 😊
+        </a>
+      </div>
     </div>
   </div>
 );
