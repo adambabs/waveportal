@@ -49,3 +49,12 @@
   padding: 5px;
   width: 300px; /* Adjust the width as needed */
 }
+
+.metamaskLogo {
+  width: 40px; /* Adjust the width */
+  height: 40px; /* Adjust the height */
+}
+/* .metamaskLogo {
+  width: 2em; // Adjust the width using em units 
+  height: 2em; // Adjust the height using em units 
+} */
