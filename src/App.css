@@ -50,11 +50,22 @@
   width: 300px; /* Adjust the width as needed */
 }
 
-.metamaskLogo {
-  width: 40px; /* Adjust the width */
-  height: 40px; /* Adjust the height */
-}
+/* .metamaskLogo {
+  width: 40px; /* Adjust the width 
+  height: 40px; /* Adjust the height 
+} */
 /* .metamaskLogo {
   width: 2em; // Adjust the width using em units 
   height: 2em; // Adjust the height using em units 
 } */
+
+.connectButton {
+  display: flex;
+  align-items: center;
+}
+
+.metamaskLogo {
+  width: 40px; /* Adjust the width */
+  height: 40px; /* Adjust the height */
+  margin-right: 8px;
+}
