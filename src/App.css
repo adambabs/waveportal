@@ -30,11 +30,22 @@
   padding: 8px;
   border: 0;
   border-radius: 5px;
-  
+
 }
 
 .waveCount {
   font-family: "Your Cool Font", sans-serif; /* Replace "Your Cool Font" with the actual font name or import the font */
   font-size: 1.5rem;
   margin-top: 2rem;
+}
+
+.largeButton {
+  font-size: 1.2rem;
+  padding: 5px 20px;
+}
+
+.largeInput {
+  font-size: 1rem;
+  padding: 5px;
+  width: 300px; /* Adjust the width as needed */
 }
