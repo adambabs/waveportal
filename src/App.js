@@ -181,67 +181,6 @@ const App = () => {
     fetchTotalWaveCount();
   }, []);
 
-//   return (
-//     <div className="mainContainer">
-//       <div className="dataContainer">
-//         <div className="header">
-//           👋 Hey there!
-//         </div>
-
-//         <div className="bio">
-//           I am Adam and I am a software engineer:)
-//           Connect your Ethereum wallet and wave at me!
-//         </div>
-
-//         <button className="waveButton" onClick={wave}>
-//           {mining ? (
-//             <div className="progressBar">Mining in progress...</div>
-//           ) : (
-//             "Wave at Me"
-//           )}
-//         </button>
-
-//         {/*
-//          * If there is no currentAccount render this button
-//          */}
-//         {!currentAccount && (
-//           <button className="waveButton" onClick={connectWallet}>
-//             Connect Wallet
-//           </button>
-//         )}
-
-//         <div>
-//           <input type="text" value={wave.message} placeholder="Enter your wave message" />
-//           <button className="waveButton" onClick={wave}>
-//             Add Wave
-//           </button>
-//         </div>
-
-//         {allWaves.map((wave, index) => {
-//           return (
-//             <div key={index} style={{ backgroundColor: "OldLace", marginTop: "16px", padding: "8px" }}>
-//               <div>Address: {wave.address}</div>
-//               <div>Time: {wave.timestamp.toString()}</div>
-//               <div>Message: {wave.message}</div>
-//             </div>)
-//         })}
-
-//         <div className="waveCount">
-//           Total Waves: {totalWaveCount}
-//         </div>
-
-//         <div className="addresswave">
-//           WavePortal address:  0x4e9AfD8B80cF08Aa4586fC02578ff0dCc74Fd501
-//         </div>
-
-//         <div className="etherscan">
-//           <a href="https://goerli.etherscan.io/address/0x6D4b0783F8752974f32406D5aDe435Ee32E65b56"> LINK TO ETHERSCAN CONTRACT </a>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
 return (
   <div className="mainContainer">
     <div className="dataContainer">
@@ -262,11 +201,7 @@ return (
         )}
       </button>
 
-      {/* {!currentAccount && (
-        <button className="waveButton" onClick={connectWallet}>
-          Connect Wallet
-        </button>
-      )} */}
+     
 
       {!currentAccount && (
         <div className="connectButtonContainer">
@@ -299,7 +234,7 @@ return (
       </div>
 
       <div className="addresswave">
-        WavePortal address: 0x4e9AfD8B80cF08Aa4586fC02578ff0dCc74Fd501
+        WavePortal address: 0x6D4b0783F8752974f32406D5aDe435Ee32E65b56
       </div>
 
       <div className="etherscan">
