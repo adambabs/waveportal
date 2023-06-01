@@ -152,7 +152,7 @@ const App = () => {
         console.log("Retrieved total wave count...", count.toNumber());
 
         setMining(true);
-        const waveTxn = await wavePortalContract.wave("this is a message")
+        const waveTxn = await wavePortalContract.wave("this is a message"{ gasLimit: 250000 } )
         console.log("Mining...", waveTxn.hash);
 
         await waveTxn.wait();
@@ -313,6 +313,8 @@ return (
           feel free to checkout my other projects on my portfolio website 😊
         </a>
       </div>
+
+
     </div>
   </div>
 );
