@@ -1,0 +1,21 @@
+// const { successBool, prize } = await wavePortalContract.isSuccess();
+        // console.log("Success:", successBool);
+        // console.log("Prize Amount:", prize);
+
+        // // Assuming you have an instantiated Web3.js instance and contract instance
+
+        // const winnerAnnouncementEvent = wavePortalContract.WinnerAnnouncement();
+
+        // winnerAnnouncementEvent.on('data', event => {
+        //   const { success, prizeAmount } = event.returnValues;
+          
+        //   if (success) {
+        //     // Display the popup banner with the success message and prize amount
+        //     const popupBanner = document.createElement('div');
+        //     popupBanner.classList.add('popup-banner');
+        //     popupBanner.textContent = `Congratulations! You've won ${ethers.utils.formatEther(prizeAmount)} ETH!`;
+
+        //     // Append the popup banner to the DOM or show it in your preferred way
+        //     document.body.appendChild(popupBanner);
+        //   }
+        // });

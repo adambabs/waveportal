@@ -3,6 +3,7 @@ import { ethers } from "ethers";
 import "./App.css";
 import abi from "./utils/WavePortal.json";
 
+
 const getEthereumObject = () => window.ethereum;
 
 /*
@@ -45,8 +46,7 @@ const App = () => {
   const [mining, setMining] = useState(false);
   const [totalWaveCount, setTotalWaveCount] = useState(0); // State variable for total wave count
 
-  // const contractAddress = "0x43E150FD724c00fc71c1dAd15435c02d04bf3873";
-  const contractAddress = "0x6D4b0783F8752974f32406D5aDe435Ee32E65b56";
+  const contractAddress = "0xbb6D25cd315cb42A1e0ce3D63676a84d53a67eE7";
   const contractABI = abi.abi;
 
 
@@ -152,7 +152,9 @@ const App = () => {
         console.log("Retrieved total wave count...", count.toNumber());
 
         setMining(true);
-        const waveTxn = await wavePortalContract.wave("this is a message", { gasLimit: 250000 } )
+        const waveTxn = await wavePortalContract.wave("this is a message", { gasLimit: 300000 } )
+        //const waveTxn = await wavePortalContract.wave("this is a message");
+
         console.log("Mining...", waveTxn.hash);
 
         await waveTxn.wait();
@@ -160,6 +162,13 @@ const App = () => {
 
         count = await wavePortalContract.getTotalWaves();
         console.log("Retrieved total wave count...", count.toNumber());
+
+        // const { successBool, prize } = await wavePortalContract.isSuccess();
+        // console.log("Success:", successBool);
+        // console.log("Prize Amount: ", ethers.utils.formatEther(prize));
+
+   
+
 
         setTotalWaveCount(count.toNumber());
         setMining(false);
@@ -234,17 +243,17 @@ return (
       </div>
 
       <div className="addresswave">
-        WavePortal address: 0x6D4b0783F8752974f32406D5aDe435Ee32E65b56
+        WavePortal address: {contractAddress}
       </div>
 
       <div className="etherscan">
-        <a href="https://goerli.etherscan.io/address/0x6D4b0783F8752974f32406D5aDe435Ee32E65b56">
+      <a href={"https://sepolia.etherscan.io/address/" + contractAddress} target="_blank">
           LINK TO ETHERSCAN CONTRACT
         </a>
       </div>
 
       <div className="portfolio">
-        <a href="https://portfolio-adambabs.vercel.app">
+        <a href="https://portfolio-adambabs.vercel.app" target="_blank">
           feel free to checkout my other projects on my portfolio website 😊
         </a>
       </div>
